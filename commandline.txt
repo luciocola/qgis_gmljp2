@@ -1,0 +1,13 @@
+ogr2ogr -f "GML" test1.gml 58f5adbf-6699-4bcf-bca6-92fe6ed1ae07-lines.shp
+gdal_translate -of JP2OpenJPEG D:\data-osm\dir\test.jp2 D:\data-osm\dir\out_test.jp2 -co GMLJP2=YES -co GeoJP2=NO -co GMLJP2V2_DEF=D:\data-osm\dir\dir_test1.jp2.def
+
+
+dir_test1.jp2.def
+{"root_instance": 
+{"crs_url": false,
+"gml_filelist":
+[
+{"file":"D:/data-osm/dir/test1.gml"}
+]
+}
+} 
